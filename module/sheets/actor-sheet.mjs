@@ -198,7 +198,10 @@ export class CainActorSheet extends BaseActorSheet {
     this._calculateRanges(context);
     context.sheetConstants = this.sheetConstants
     context.globalTalismans = game.settings.get('cain', 'globalTalismans');
-    context.selectedTalismans = this.actor.system.selectedTalismans || [];
+    const actorTalismans = this.actor.system.selectedTalismans || [];
+    const allowedSet = new Set(actorTalismans.map(item => item.name));
+    const filtered = context.globalTalismans.filter(item => allowedSet.has(item.name));
+    context.selectedTalismans = filtered
 
     console.log(context.globalTalismans);
 

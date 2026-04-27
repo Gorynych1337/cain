@@ -132,7 +132,7 @@
   },
   "socket": true,
   "manifest": "https://github.com/Gorynych1337/cain/blob/main/system.json",
-  "download": "https://github.com/Gorynych1337/cain/archive/refs/tags/Test.zip",
+  "download": "https://github.com/Gorynych1337/cain/archive/refs/tags/Test_4.zip",
   "background": "systems/cain/assets/cainnew.png",
   "grid": {
     "distance": 5,
