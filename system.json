@@ -14,9 +14,10 @@
         "paths": ["lang", "module", "src", "css", "templates"]
       }
   },
-  "url": "https://github.com/Gorynych1337/cain",
+  "url": "https://github.com/bugeso/cain1.3",
   "license": "LICENSE.txt",
   "readme": "README.md",
+  "bugs": "https://github.com/bugeso/cain1.3/issues",
   "changelog": "CHANGELOG.md",
   "media": [
     {
@@ -131,7 +132,8 @@
     }
   },
   "socket": true,
-  "manifest": "https://github.com/Gorynych1337/cain/blob/main/system.json",
+  "manifest": "https://raw.githubusercontent.com/bugeso/cain1.3/main/system.json",
+  "download": "https://github.com/bugeso/cain1.3/releases/latest/download/cain1.3.zip",
   "background": "systems/cain/assets/cainnew.png",
   "grid": {
     "distance": 5,
