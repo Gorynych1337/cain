@@ -116,7 +116,7 @@
                                 <span class="talisman-name white-text-shadow">{{this.name}}</span>
                             </div>
                             <div class="col talisman-count-col">
-                                <span class="talisman-label">{{globalTalismans.find(item => item.name === this.name)?.currMarkAmount}} / {{globalTalismans.find(item => item.name === this.name)?.maxMarkAmount}}</span>
+                                <span class="talisman-label">{{this.currMarkAmount}} / {{this.maxMarkAmount}}</span>
                             </div>
                             <div class="col talisman-button-col">
                                 <button type="button" class="delete-talisman-button" data-index="{{@index}}"><i class='fas fa-x'></i></button>
