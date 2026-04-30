@@ -131,7 +131,7 @@
     }
   },
   "socket": true,
-  "manifest": "https://github.com/Gorynych1337/cain/blob/main/system.json",
+  "manifest": "https://raw.githubusercontent.com/Gorynych1337/cain/main/system.json",
   "download": "https://github.com/Gorynych1337/cain/releases/latest/download/cain.zip",
   "background": "systems/cain/assets/cainnew.png",
   "grid": {
