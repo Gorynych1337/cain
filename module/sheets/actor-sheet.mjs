@@ -199,9 +199,14 @@ export class CainActorSheet extends BaseActorSheet {
     context.sheetConstants = this.sheetConstants
     context.globalTalismans = game.settings.get('cain', 'globalTalismans');
     const actorTalismans = this.actor.system.selectedTalismans || [];
-    const allowedSet = new Set(actorTalismans.map(item => item.name));
-    const filtered = context.globalTalismans.filter(item => allowedSet.has(item.name));
-    context.selectedTalismans = filtered
+    const allowedNames = new Set(actorTalismans.map(item => item.name));
+    const matchedGlobals = context.globalTalismans.filter(item => allowedNames.has(item.name));
+    const combinedMap = new Map();
+    matchedGlobals.forEach(t => combinedMap.set(t.name, t));
+    actorTalismans.forEach(g => {
+      if (!combinedMap.has(g.name)) combinedMap.set(g.name, g);
+    });
+    context.selectedTalismans = Array.from(combinedMap.values());
 
     console.log(context.globalTalismans);
 

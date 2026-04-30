@@ -4,7 +4,7 @@
   "description": "A Foundry VTT game system for CAIN by Tom Bloom/CHASM 2024, a psychic death soldier RPG about wiping away humanity's stains.",
   "authors": [
     {
-      "name": "Adamkostandy, Bug",
+      "name": "Adamkostandy, Bug + Gorynych_0",
       "discord": "adamkostandy, bugeso"
     }
   ],
@@ -132,7 +132,7 @@
   },
   "socket": true,
   "manifest": "https://github.com/Gorynych1337/cain/blob/main/system.json",
-  "download": "https://github.com/Gorynych1337/cain/archive/refs/tags/Test_4.zip",
+  "download": "https://github.com/Gorynych1337/cain/releases/latest/download/cain.zip",
   "background": "systems/cain/assets/cainnew.png",
   "grid": {
     "distance": 5,
